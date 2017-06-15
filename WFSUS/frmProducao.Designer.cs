@@ -57,7 +57,7 @@
             this.btnJaneiro.Location = new System.Drawing.Point(15, 131);
             this.btnJaneiro.Name = "btnJaneiro";
             this.btnJaneiro.Size = new System.Drawing.Size(132, 62);
-            this.btnJaneiro.TabIndex = 3;
+            this.btnJaneiro.TabIndex = 1;
             this.btnJaneiro.Text = "Janeiro";
             this.btnJaneiro.UseVisualStyleBackColor = false;
             this.btnJaneiro.Click += new System.EventHandler(this.btnJaneiro_Click);
@@ -81,7 +81,7 @@
             this.btnFevereiro.Location = new System.Drawing.Point(153, 131);
             this.btnFevereiro.Name = "btnFevereiro";
             this.btnFevereiro.Size = new System.Drawing.Size(132, 62);
-            this.btnFevereiro.TabIndex = 5;
+            this.btnFevereiro.TabIndex = 2;
             this.btnFevereiro.Text = "Fevereiro";
             this.btnFevereiro.UseVisualStyleBackColor = false;
             this.btnFevereiro.Click += new System.EventHandler(this.btnFevereiro_Click);
@@ -95,7 +95,7 @@
             this.btnMarco.Location = new System.Drawing.Point(291, 131);
             this.btnMarco.Name = "btnMarco";
             this.btnMarco.Size = new System.Drawing.Size(132, 62);
-            this.btnMarco.TabIndex = 6;
+            this.btnMarco.TabIndex = 3;
             this.btnMarco.Text = "Marco";
             this.btnMarco.UseVisualStyleBackColor = false;
             this.btnMarco.Click += new System.EventHandler(this.btnMarco_Click);
@@ -109,7 +109,7 @@
             this.btnAbril.Location = new System.Drawing.Point(429, 131);
             this.btnAbril.Name = "btnAbril";
             this.btnAbril.Size = new System.Drawing.Size(132, 62);
-            this.btnAbril.TabIndex = 7;
+            this.btnAbril.TabIndex = 4;
             this.btnAbril.Text = "Abril";
             this.btnAbril.UseVisualStyleBackColor = false;
             this.btnAbril.Click += new System.EventHandler(this.btnAbril_Click);
@@ -123,7 +123,7 @@
             this.btnMaio.Location = new System.Drawing.Point(15, 199);
             this.btnMaio.Name = "btnMaio";
             this.btnMaio.Size = new System.Drawing.Size(132, 62);
-            this.btnMaio.TabIndex = 8;
+            this.btnMaio.TabIndex = 5;
             this.btnMaio.Text = "Maio";
             this.btnMaio.UseVisualStyleBackColor = false;
             this.btnMaio.Click += new System.EventHandler(this.btnMaio_Click);
@@ -137,7 +137,7 @@
             this.btnJunho.Location = new System.Drawing.Point(153, 199);
             this.btnJunho.Name = "btnJunho";
             this.btnJunho.Size = new System.Drawing.Size(132, 62);
-            this.btnJunho.TabIndex = 9;
+            this.btnJunho.TabIndex = 6;
             this.btnJunho.Text = "Junho";
             this.btnJunho.UseVisualStyleBackColor = false;
             this.btnJunho.Click += new System.EventHandler(this.btnJunho_Click);
@@ -151,7 +151,7 @@
             this.btnJulho.Location = new System.Drawing.Point(291, 199);
             this.btnJulho.Name = "btnJulho";
             this.btnJulho.Size = new System.Drawing.Size(132, 62);
-            this.btnJulho.TabIndex = 10;
+            this.btnJulho.TabIndex = 7;
             this.btnJulho.Text = "Julho";
             this.btnJulho.UseVisualStyleBackColor = false;
             this.btnJulho.Click += new System.EventHandler(this.btnJulho_Click);
@@ -165,7 +165,7 @@
             this.btnAgosto.Location = new System.Drawing.Point(429, 199);
             this.btnAgosto.Name = "btnAgosto";
             this.btnAgosto.Size = new System.Drawing.Size(132, 62);
-            this.btnAgosto.TabIndex = 11;
+            this.btnAgosto.TabIndex = 8;
             this.btnAgosto.Text = "Agosto";
             this.btnAgosto.UseVisualStyleBackColor = false;
             this.btnAgosto.Click += new System.EventHandler(this.btnAgosto_Click);
@@ -179,7 +179,7 @@
             this.btnSetembro.Location = new System.Drawing.Point(16, 267);
             this.btnSetembro.Name = "btnSetembro";
             this.btnSetembro.Size = new System.Drawing.Size(132, 62);
-            this.btnSetembro.TabIndex = 12;
+            this.btnSetembro.TabIndex = 9;
             this.btnSetembro.Text = "Setembro";
             this.btnSetembro.UseVisualStyleBackColor = false;
             this.btnSetembro.Click += new System.EventHandler(this.btnSetembro_Click);
@@ -193,7 +193,7 @@
             this.btnOutubro.Location = new System.Drawing.Point(154, 267);
             this.btnOutubro.Name = "btnOutubro";
             this.btnOutubro.Size = new System.Drawing.Size(132, 62);
-            this.btnOutubro.TabIndex = 13;
+            this.btnOutubro.TabIndex = 10;
             this.btnOutubro.Text = "Outubro";
             this.btnOutubro.UseVisualStyleBackColor = false;
             this.btnOutubro.Click += new System.EventHandler(this.btnOutubro_Click);
@@ -207,7 +207,7 @@
             this.btnNovembro.Location = new System.Drawing.Point(292, 267);
             this.btnNovembro.Name = "btnNovembro";
             this.btnNovembro.Size = new System.Drawing.Size(132, 62);
-            this.btnNovembro.TabIndex = 14;
+            this.btnNovembro.TabIndex = 11;
             this.btnNovembro.Text = "Novembro";
             this.btnNovembro.UseVisualStyleBackColor = false;
             this.btnNovembro.Click += new System.EventHandler(this.btnNovembro_Click);
@@ -221,7 +221,7 @@
             this.btnDezembro.Location = new System.Drawing.Point(429, 267);
             this.btnDezembro.Name = "btnDezembro";
             this.btnDezembro.Size = new System.Drawing.Size(132, 62);
-            this.btnDezembro.TabIndex = 15;
+            this.btnDezembro.TabIndex = 12;
             this.btnDezembro.Text = "Dezembro";
             this.btnDezembro.UseVisualStyleBackColor = false;
             this.btnDezembro.Click += new System.EventHandler(this.btnDezembro_Click);
@@ -245,7 +245,7 @@
             this.btnSair.Location = new System.Drawing.Point(429, 374);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(132, 40);
-            this.btnSair.TabIndex = 17;
+            this.btnSair.TabIndex = 14;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = false;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
@@ -259,7 +259,7 @@
             this.btnResetar.Location = new System.Drawing.Point(291, 374);
             this.btnResetar.Name = "btnResetar";
             this.btnResetar.Size = new System.Drawing.Size(132, 40);
-            this.btnResetar.TabIndex = 18;
+            this.btnResetar.TabIndex = 13;
             this.btnResetar.Text = "Resetar";
             this.btnResetar.UseVisualStyleBackColor = false;
             // 

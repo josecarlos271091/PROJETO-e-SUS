@@ -93,7 +93,7 @@
             this.txtTotalAtend.Location = new System.Drawing.Point(343, 87);
             this.txtTotalAtend.Name = "txtTotalAtend";
             this.txtTotalAtend.Size = new System.Drawing.Size(100, 20);
-            this.txtTotalAtend.TabIndex = 19;
+            this.txtTotalAtend.TabIndex = 1;
             // 
             // label1
             // 
@@ -110,7 +110,7 @@
             this.txtConsultasAgend.Location = new System.Drawing.Point(343, 116);
             this.txtConsultasAgend.Name = "txtConsultasAgend";
             this.txtConsultasAgend.Size = new System.Drawing.Size(100, 20);
-            this.txtConsultasAgend.TabIndex = 21;
+            this.txtConsultasAgend.TabIndex = 2;
             // 
             // label3
             // 
@@ -127,7 +127,7 @@
             this.txtPreNatal.Location = new System.Drawing.Point(343, 146);
             this.txtPreNatal.Name = "txtPreNatal";
             this.txtPreNatal.Size = new System.Drawing.Size(100, 20);
-            this.txtPreNatal.TabIndex = 23;
+            this.txtPreNatal.TabIndex = 3;
             // 
             // label4
             // 
@@ -264,91 +264,91 @@
             this.txtPuericultura.Location = new System.Drawing.Point(343, 177);
             this.txtPuericultura.Name = "txtPuericultura";
             this.txtPuericultura.Size = new System.Drawing.Size(100, 20);
-            this.txtPuericultura.TabIndex = 37;
+            this.txtPuericultura.TabIndex = 4;
             // 
             // txtHipertensos
             // 
             this.txtHipertensos.Location = new System.Drawing.Point(343, 209);
             this.txtHipertensos.Name = "txtHipertensos";
             this.txtHipertensos.Size = new System.Drawing.Size(100, 20);
-            this.txtHipertensos.TabIndex = 38;
+            this.txtHipertensos.TabIndex = 5;
             // 
             // txtDiabeticos
             // 
             this.txtDiabeticos.Location = new System.Drawing.Point(343, 240);
             this.txtDiabeticos.Name = "txtDiabeticos";
             this.txtDiabeticos.Size = new System.Drawing.Size(100, 20);
-            this.txtDiabeticos.TabIndex = 39;
+            this.txtDiabeticos.TabIndex = 6;
             // 
             // txtAsmaticos
             // 
             this.txtAsmaticos.Location = new System.Drawing.Point(343, 271);
             this.txtAsmaticos.Name = "txtAsmaticos";
             this.txtAsmaticos.Size = new System.Drawing.Size(100, 20);
-            this.txtAsmaticos.TabIndex = 40;
+            this.txtAsmaticos.TabIndex = 7;
             // 
             // txtSaudeMental
             // 
             this.txtSaudeMental.Location = new System.Drawing.Point(343, 303);
             this.txtSaudeMental.Name = "txtSaudeMental";
             this.txtSaudeMental.Size = new System.Drawing.Size(100, 20);
-            this.txtSaudeMental.TabIndex = 41;
+            this.txtSaudeMental.TabIndex = 8;
             // 
             // txtAlcolDrogas
             // 
             this.txtAlcolDrogas.Location = new System.Drawing.Point(343, 335);
             this.txtAlcolDrogas.Name = "txtAlcolDrogas";
             this.txtAlcolDrogas.Size = new System.Drawing.Size(100, 20);
-            this.txtAlcolDrogas.TabIndex = 42;
+            this.txtAlcolDrogas.TabIndex = 9;
             // 
             // txtTuberculose
             // 
             this.txtTuberculose.Location = new System.Drawing.Point(343, 367);
             this.txtTuberculose.Name = "txtTuberculose";
             this.txtTuberculose.Size = new System.Drawing.Size(100, 20);
-            this.txtTuberculose.TabIndex = 43;
+            this.txtTuberculose.TabIndex = 10;
             // 
             // txtHanseniase
             // 
             this.txtHanseniase.Location = new System.Drawing.Point(343, 396);
             this.txtHanseniase.Name = "txtHanseniase";
             this.txtHanseniase.Size = new System.Drawing.Size(100, 20);
-            this.txtHanseniase.TabIndex = 44;
+            this.txtHanseniase.TabIndex = 11;
             // 
             // txtCancerUtero
             // 
             this.txtCancerUtero.Location = new System.Drawing.Point(343, 432);
             this.txtCancerUtero.Name = "txtCancerUtero";
             this.txtCancerUtero.Size = new System.Drawing.Size(100, 20);
-            this.txtCancerUtero.TabIndex = 45;
+            this.txtCancerUtero.TabIndex = 12;
             // 
             // txtCancerMama
             // 
             this.txtCancerMama.Location = new System.Drawing.Point(343, 461);
             this.txtCancerMama.Name = "txtCancerMama";
             this.txtCancerMama.Size = new System.Drawing.Size(100, 20);
-            this.txtCancerMama.TabIndex = 46;
+            this.txtCancerMama.TabIndex = 13;
             // 
             // txtVisitasDomiciliares
             // 
             this.txtVisitasDomiciliares.Location = new System.Drawing.Point(343, 492);
             this.txtVisitasDomiciliares.Name = "txtVisitasDomiciliares";
             this.txtVisitasDomiciliares.Size = new System.Drawing.Size(100, 20);
-            this.txtVisitasDomiciliares.TabIndex = 47;
+            this.txtVisitasDomiciliares.TabIndex = 14;
             // 
             // txtAtividadesColetivas
             // 
             this.txtAtividadesColetivas.Location = new System.Drawing.Point(343, 522);
             this.txtAtividadesColetivas.Name = "txtAtividadesColetivas";
             this.txtAtividadesColetivas.Size = new System.Drawing.Size(100, 20);
-            this.txtAtividadesColetivas.TabIndex = 48;
+            this.txtAtividadesColetivas.TabIndex = 15;
             // 
             // txtEncaminhamentosHosp
             // 
             this.txtEncaminhamentosHosp.Location = new System.Drawing.Point(343, 553);
             this.txtEncaminhamentosHosp.Name = "txtEncaminhamentosHosp";
             this.txtEncaminhamentosHosp.Size = new System.Drawing.Size(100, 20);
-            this.txtEncaminhamentosHosp.TabIndex = 49;
+            this.txtEncaminhamentosHosp.TabIndex = 16;
             // 
             // btnSair
             // 
@@ -359,7 +359,7 @@
             this.btnSair.Location = new System.Drawing.Point(450, 603);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(115, 34);
-            this.btnSair.TabIndex = 50;
+            this.btnSair.TabIndex = 19;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = false;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
@@ -373,7 +373,7 @@
             this.btnAtualizar.Location = new System.Drawing.Point(329, 603);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(115, 34);
-            this.btnAtualizar.TabIndex = 51;
+            this.btnAtualizar.TabIndex = 18;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = false;
             // 
@@ -386,7 +386,7 @@
             this.btnSalvar.Location = new System.Drawing.Point(208, 603);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(115, 34);
-            this.btnSalvar.TabIndex = 52;
+            this.btnSalvar.TabIndex = 17;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
             // 
