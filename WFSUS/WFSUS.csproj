@@ -77,6 +77,18 @@
     <Compile Include="frmProducao.Designer.cs">
       <DependentUpon>frmProducao.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatorio.Designer.cs">
+      <DependentUpon>frmRelatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelatoriosEspecificos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatoriosEspecificos.Designer.cs">
+      <DependentUpon>frmRelatoriosEspecificos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCalendario.resx">
@@ -93,6 +105,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmProducao.resx">
       <DependentUpon>frmProducao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatorio.resx">
+      <DependentUpon>frmRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatoriosEspecificos.resx">
+      <DependentUpon>frmRelatoriosEspecificos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -126,6 +144,20 @@
     <Content Include="Images\logo25.jpg" />
     <Content Include="Images\logo_sus.png" />
     <Content Include="Images\índice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\com.sus.Bussiness\com.sus.Bussiness.csproj">
+      <Project>{B77C50A8-CF43-43E3-969C-50EB4DB65A64}</Project>
+      <Name>com.sus.Bussiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.sus.DAL\com.sus.DAL.csproj">
+      <Project>{52A5FFCB-1559-448C-A578-8E07E1A4A153}</Project>
+      <Name>com.sus.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.sus.DTO\com.sus.DTO.csproj">
+      <Project>{51DA3C82-8FD9-4ECF-95BA-F7DEDAE83653}</Project>
+      <Name>com.sus.DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

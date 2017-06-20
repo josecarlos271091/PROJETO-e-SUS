@@ -74,7 +74,7 @@
             // 
             // btnFevereiro
             // 
-            this.btnFevereiro.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnFevereiro.BackColor = System.Drawing.Color.FloralWhite;
             this.btnFevereiro.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.btnFevereiro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFevereiro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -102,7 +102,7 @@
             // 
             // btnAbril
             // 
-            this.btnAbril.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnAbril.BackColor = System.Drawing.Color.FloralWhite;
             this.btnAbril.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.btnAbril.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAbril.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -130,7 +130,7 @@
             // 
             // btnJunho
             // 
-            this.btnJunho.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnJunho.BackColor = System.Drawing.Color.FloralWhite;
             this.btnJunho.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.btnJunho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnJunho.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -158,7 +158,7 @@
             // 
             // btnAgosto
             // 
-            this.btnAgosto.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnAgosto.BackColor = System.Drawing.Color.FloralWhite;
             this.btnAgosto.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.btnAgosto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgosto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -186,7 +186,7 @@
             // 
             // btnOutubro
             // 
-            this.btnOutubro.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnOutubro.BackColor = System.Drawing.Color.FloralWhite;
             this.btnOutubro.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.btnOutubro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOutubro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -214,7 +214,7 @@
             // 
             // btnDezembro
             // 
-            this.btnDezembro.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnDezembro.BackColor = System.Drawing.Color.FloralWhite;
             this.btnDezembro.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.btnDezembro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDezembro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -252,7 +252,7 @@
             // 
             // btnResetar
             // 
-            this.btnResetar.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnResetar.BackColor = System.Drawing.Color.Salmon;
             this.btnResetar.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnResetar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResetar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -260,8 +260,9 @@
             this.btnResetar.Name = "btnResetar";
             this.btnResetar.Size = new System.Drawing.Size(132, 40);
             this.btnResetar.TabIndex = 13;
-            this.btnResetar.Text = "Resetar";
+            this.btnResetar.Text = "Deletar";
             this.btnResetar.UseVisualStyleBackColor = false;
+            this.btnResetar.Click += new System.EventHandler(this.btnResetar_Click);
             // 
             // frmProducao
             // 

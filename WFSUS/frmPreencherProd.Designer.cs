@@ -65,6 +65,7 @@
             this.btnSair = new System.Windows.Forms.Button();
             this.btnAtualizar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnDeletar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -370,31 +371,48 @@
             this.btnAtualizar.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnAtualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtualizar.Location = new System.Drawing.Point(329, 603);
+            this.btnAtualizar.Location = new System.Drawing.Point(208, 603);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(115, 34);
             this.btnAtualizar.TabIndex = 18;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = false;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // btnSalvar
             // 
-            this.btnSalvar.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnSalvar.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(208, 603);
+            this.btnSalvar.Location = new System.Drawing.Point(87, 603);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(115, 34);
             this.btnSalvar.TabIndex = 17;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // btnDeletar
+            // 
+            this.btnDeletar.BackColor = System.Drawing.Color.Salmon;
+            this.btnDeletar.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnDeletar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeletar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeletar.Location = new System.Drawing.Point(329, 603);
+            this.btnDeletar.Name = "btnDeletar";
+            this.btnDeletar.Size = new System.Drawing.Size(115, 34);
+            this.btnDeletar.TabIndex = 37;
+            this.btnDeletar.Text = "Deletar";
+            this.btnDeletar.UseVisualStyleBackColor = false;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
             // 
             // frmPreencherProd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(577, 669);
+            this.Controls.Add(this.btnDeletar);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnSair);
@@ -479,5 +497,6 @@
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Button btnDeletar;
     }
 }

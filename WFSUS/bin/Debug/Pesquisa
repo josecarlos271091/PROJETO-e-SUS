@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <idProducao>1</idProducao>
+    <idUsuario>1</idUsuario>
+    <idMes>1</idMes>
+    <totalAtend>350</totalAtend>
+    <consultasAgendadas>12</consultasAgendadas>
+    <atendPreNatal>22</atendPreNatal>
+    <atendPuericultura>21</atendPuericultura>
+    <atendHipertensos>10</atendHipertensos>
+    <atendDiabeticos>14</atendDiabeticos>
+    <atendAsma>16</atendAsma>
+    <atendMental>18</atendMental>
+    <atendAlcDrogas>28</atendAlcDrogas>
+    <atendTuberculose>32</atendTuberculose>
+    <atendHanseniase>16</atendHanseniase>
+    <atendCancerUtero>15</atendCancerUtero>
+    <atendCancerMama>19</atendCancerMama>
+    <visitasDomic>17</visitasDomic>
+    <atColetivas>16</atColetivas>
+    <encaminHospital>55</encaminHospital>
+  </Table>
+</NewDataSet>

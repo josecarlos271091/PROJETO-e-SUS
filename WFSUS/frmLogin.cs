@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +14,8 @@ namespace WFSUS
 {
     public partial class frmLogin : Form
     {
+        public static string nomeusuarioLogado;
+        public static int idusuarioLogado;
         public frmLogin()
         {
             InitializeComponent();
@@ -26,26 +30,47 @@ namespace WFSUS
         }
 
         /// <summary>
-        /// Cria var _nome e _senha as quais recebem do App.config o nome e usuario predeterminados
+        /// Cria var _nome e _senha as quais recebem do Banco de dados o nome e usuario previamente cadastrados
         /// Caso o inserido nos txtUsuario e txtSenha nao ser iguais mostra mensagem de erro
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            var _nome = System.Configuration.ConfigurationManager.AppSettings["usuario"].ToString();
-            var _senha = System.Configuration.ConfigurationManager.AppSettings["senha"].ToString();
+            try
+            {
+                SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["MinhaConexao"].ToString());
 
-            if (txtUsuario.Text.Equals(_nome) && txtSenha.Text.Equals(_senha))
-            {
-                this.Hide();
-                frmPrincipal form = new frmPrincipal();
-                form.Show();
+                String _usuario = txtUsuario.Text;
+                String _senha = txtSenha.Text;
+
+                con.Open();
+                string sql = "SELECT * FROM Usuario WHERE nomeUsuario=@_usuario AND senhaUsuario=@_senha";
+                SqlCommand cmd = new SqlCommand(sql, con);
+                cmd.Parameters.Add("@_usuario", SqlDbType.NVarChar).Value = _usuario;
+                cmd.Parameters.Add("@_senha", SqlDbType.NVarChar).Value = _senha;
+
+                SqlDataReader sdr = cmd.ExecuteReader();
+
+                if (sdr.Read())
+                {
+
+                    idusuarioLogado = sdr.GetInt32(0);
+                    nomeusuarioLogado = _usuario;
+                    this.Hide();
+                    frmPrincipal form = new frmPrincipal();
+                    form.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Por favor digite a senha corretamente", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtUsuario.Focus();
+                }
+
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Por favor digite a senha corretamente", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtUsuario.Focus();
+                MessageBox.Show(ex.Message);
             }
         }
     }

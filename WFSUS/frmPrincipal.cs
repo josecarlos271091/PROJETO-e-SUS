@@ -15,8 +15,9 @@ namespace WFSUS
         public frmPrincipal()
         {
             InitializeComponent();
+            lblUsuarioLogado.Text = "Seja Bem-Vindo(a) Doutor(a) "+frmLogin.nomeusuarioLogado.ToUpper()+"!";
         }
-
+        
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Deseja encerrar a aplicação ?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
@@ -35,6 +36,20 @@ namespace WFSUS
         private void preencherProducaoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmProducao frm = new frmProducao();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void visualizarRelatorioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRelatorio frm = new frmRelatorio();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void relatoriosEspecificosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRelatoriosEspecificos frm = new frmRelatoriosEspecificos();
             frm.MdiParent = this;
             frm.Show();
         }

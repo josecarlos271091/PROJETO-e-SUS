@@ -11,3 +11,11 @@ C:\Users\Jose Carlos\Desktop\PROJETO FINAL TALP\ProjetoFinalTALP\PROJETOFINALTAL
 C:\Users\Jose Carlos\Desktop\PROJETO FINAL TALP\ProjetoFinalTALP\PROJETOFINALTALP\WFSUS\obj\Debug\WFSUS.frmCalendario.resources
 C:\Users\Jose Carlos\Desktop\PROJETO FINAL TALP\ProjetoFinalTALP\PROJETOFINALTALP\WFSUS\obj\Debug\WFSUS.frmProducao.resources
 C:\Users\Jose Carlos\Desktop\PROJETO FINAL TALP\ProjetoFinalTALP\PROJETOFINALTALP\WFSUS\obj\Debug\WFSUS.frmPreencherProd.resources
+C:\Users\Jose Carlos\Desktop\PROJETO FINAL TALP\ProjetoFinalTALP\PROJETOFINALTALP\WFSUS\bin\Debug\com.sus.Bussiness.dll
+C:\Users\Jose Carlos\Desktop\PROJETO FINAL TALP\ProjetoFinalTALP\PROJETOFINALTALP\WFSUS\bin\Debug\com.sus.DAL.dll
+C:\Users\Jose Carlos\Desktop\PROJETO FINAL TALP\ProjetoFinalTALP\PROJETOFINALTALP\WFSUS\bin\Debug\com.sus.DTO.dll
+C:\Users\Jose Carlos\Desktop\PROJETO FINAL TALP\ProjetoFinalTALP\PROJETOFINALTALP\WFSUS\bin\Debug\com.sus.Bussiness.pdb
+C:\Users\Jose Carlos\Desktop\PROJETO FINAL TALP\ProjetoFinalTALP\PROJETOFINALTALP\WFSUS\bin\Debug\com.sus.DAL.pdb
+C:\Users\Jose Carlos\Desktop\PROJETO FINAL TALP\ProjetoFinalTALP\PROJETOFINALTALP\WFSUS\bin\Debug\com.sus.DTO.pdb
+C:\Users\Jose Carlos\Desktop\PROJETO FINAL TALP\ProjetoFinalTALP\PROJETOFINALTALP\WFSUS\obj\Debug\WFSUS.frmRelatorio.resources
+C:\Users\Jose Carlos\Desktop\PROJETO FINAL TALP\ProjetoFinalTALP\PROJETOFINALTALP\WFSUS\obj\Debug\WFSUS.frmRelatoriosEspecificos.resources

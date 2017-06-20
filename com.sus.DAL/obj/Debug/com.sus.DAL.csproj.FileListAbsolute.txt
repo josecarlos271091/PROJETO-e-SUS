@@ -1,0 +1,7 @@
+C:\Users\Jose Carlos\Desktop\PROJETO FINAL TALP\ProjetoFinalTALP\PROJETOFINALTALP\com.sus.DAL\bin\Debug\com.sus.DAL.dll
+C:\Users\Jose Carlos\Desktop\PROJETO FINAL TALP\ProjetoFinalTALP\PROJETOFINALTALP\com.sus.DAL\bin\Debug\com.sus.DAL.pdb
+C:\Users\Jose Carlos\Desktop\PROJETO FINAL TALP\ProjetoFinalTALP\PROJETOFINALTALP\com.sus.DAL\bin\Debug\com.sus.DTO.dll
+C:\Users\Jose Carlos\Desktop\PROJETO FINAL TALP\ProjetoFinalTALP\PROJETOFINALTALP\com.sus.DAL\bin\Debug\com.sus.DTO.pdb
+C:\Users\Jose Carlos\Desktop\PROJETO FINAL TALP\ProjetoFinalTALP\PROJETOFINALTALP\com.sus.DAL\obj\Debug\com.sus.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Jose Carlos\Desktop\PROJETO FINAL TALP\ProjetoFinalTALP\PROJETOFINALTALP\com.sus.DAL\obj\Debug\com.sus.DAL.dll
+C:\Users\Jose Carlos\Desktop\PROJETO FINAL TALP\ProjetoFinalTALP\PROJETOFINALTALP\com.sus.DAL\obj\Debug\com.sus.DAL.pdb

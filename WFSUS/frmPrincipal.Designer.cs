@@ -33,9 +33,11 @@
             this.producaoMedicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.preencherProducaoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatoriosMedicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visualizarRelatorioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calendarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblUsuarioLogado = new System.Windows.Forms.Label();
+            this.relatoriosEspecificosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,23 +72,18 @@
             // relatoriosMedicoToolStripMenuItem
             // 
             this.relatoriosMedicoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.visualizarRelatorioToolStripMenuItem});
+            this.visualizarRelatorioToolStripMenuItem,
+            this.relatoriosEspecificosToolStripMenuItem});
             this.relatoriosMedicoToolStripMenuItem.Name = "relatoriosMedicoToolStripMenuItem";
             this.relatoriosMedicoToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
             this.relatoriosMedicoToolStripMenuItem.Text = "Relatorios Medico";
             // 
-            // sairToolStripMenuItem
-            // 
-            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
-            this.sairToolStripMenuItem.Text = "Sair";
-            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
-            // 
             // visualizarRelatorioToolStripMenuItem
             // 
             this.visualizarRelatorioToolStripMenuItem.Name = "visualizarRelatorioToolStripMenuItem";
-            this.visualizarRelatorioToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
-            this.visualizarRelatorioToolStripMenuItem.Text = "Visualizar Relatorio";
+            this.visualizarRelatorioToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
+            this.visualizarRelatorioToolStripMenuItem.Text = "Visualizar Todos os Dados";
+            this.visualizarRelatorioToolStripMenuItem.Click += new System.EventHandler(this.visualizarRelatorioToolStripMenuItem_Click);
             // 
             // calendarioToolStripMenuItem
             // 
@@ -95,6 +92,31 @@
             this.calendarioToolStripMenuItem.Text = "Calendario";
             this.calendarioToolStripMenuItem.Click += new System.EventHandler(this.calendarioToolStripMenuItem_Click);
             // 
+            // sairToolStripMenuItem
+            // 
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
+            // 
+            // lblUsuarioLogado
+            // 
+            this.lblUsuarioLogado.AutoSize = true;
+            this.lblUsuarioLogado.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblUsuarioLogado.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblUsuarioLogado.Location = new System.Drawing.Point(544, 24);
+            this.lblUsuarioLogado.Name = "lblUsuarioLogado";
+            this.lblUsuarioLogado.Size = new System.Drawing.Size(117, 19);
+            this.lblUsuarioLogado.TabIndex = 3;
+            this.lblUsuarioLogado.Text = "SEJA BEM VINDO";
+            // 
+            // relatoriosEspecificosToolStripMenuItem
+            // 
+            this.relatoriosEspecificosToolStripMenuItem.Name = "relatoriosEspecificosToolStripMenuItem";
+            this.relatoriosEspecificosToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
+            this.relatoriosEspecificosToolStripMenuItem.Text = "Relatorios Especificos";
+            this.relatoriosEspecificosToolStripMenuItem.Click += new System.EventHandler(this.relatoriosEspecificosToolStripMenuItem_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -102,6 +124,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(709, 484);
+            this.Controls.Add(this.lblUsuarioLogado);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -128,6 +151,8 @@
         private System.Windows.Forms.ToolStripMenuItem visualizarRelatorioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calendarioToolStripMenuItem;
+        private System.Windows.Forms.Label lblUsuarioLogado;
+        private System.Windows.Forms.ToolStripMenuItem relatoriosEspecificosToolStripMenuItem;
     }
 }
 
