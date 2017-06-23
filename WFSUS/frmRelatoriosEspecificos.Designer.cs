@@ -407,9 +407,9 @@
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(21, 400);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(150, 16);
+            this.label18.Size = new System.Drawing.Size(153, 16);
             this.label18.TabIndex = 71;
-            this.label18.Text = "Selecione o Medico:";
+            this.label18.Text = "Selecione o Usuario:";
             // 
             // cbUsuario
             // 

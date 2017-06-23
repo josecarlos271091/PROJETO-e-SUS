@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="ProducaoBussiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsuariosBussiness.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\com.sus.DAL\com.sus.DAL.csproj">

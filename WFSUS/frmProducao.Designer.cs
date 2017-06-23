@@ -260,7 +260,7 @@
             this.btnResetar.Name = "btnResetar";
             this.btnResetar.Size = new System.Drawing.Size(132, 40);
             this.btnResetar.TabIndex = 13;
-            this.btnResetar.Text = "Deletar";
+            this.btnResetar.Text = "Deletar All";
             this.btnResetar.UseVisualStyleBackColor = false;
             this.btnResetar.Click += new System.EventHandler(this.btnResetar_Click);
             // 

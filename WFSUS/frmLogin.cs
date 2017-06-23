@@ -52,7 +52,14 @@ namespace WFSUS
 
                 SqlDataReader sdr = cmd.ExecuteReader();
 
-                if (sdr.Read())
+                //Verificando se iniciou o administrador ou um usuario estandar
+                if (_usuario == "admin" && _senha == "12345")
+                {
+
+                    frmAdmin formAdmin = new frmAdmin();
+                    formAdmin.Show();
+                }
+                else if (sdr.Read())
                 {
 
                     idusuarioLogado = sdr.GetInt32(0);
@@ -63,7 +70,7 @@ namespace WFSUS
                 }
                 else
                 {
-                    MessageBox.Show("Por favor digite a senha corretamente", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Por favor digite o usuario e (ou) senha corretamente", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtUsuario.Focus();
                 }
 

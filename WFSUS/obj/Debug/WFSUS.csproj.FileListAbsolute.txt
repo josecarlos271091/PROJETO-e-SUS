@@ -19,3 +19,5 @@ C:\Users\Jose Carlos\Desktop\PROJETO FINAL TALP\ProjetoFinalTALP\PROJETOFINALTAL
 C:\Users\Jose Carlos\Desktop\PROJETO FINAL TALP\ProjetoFinalTALP\PROJETOFINALTALP\WFSUS\bin\Debug\com.sus.DTO.pdb
 C:\Users\Jose Carlos\Desktop\PROJETO FINAL TALP\ProjetoFinalTALP\PROJETOFINALTALP\WFSUS\obj\Debug\WFSUS.frmRelatorio.resources
 C:\Users\Jose Carlos\Desktop\PROJETO FINAL TALP\ProjetoFinalTALP\PROJETOFINALTALP\WFSUS\obj\Debug\WFSUS.frmRelatoriosEspecificos.resources
+C:\Users\Jose Carlos\Desktop\PROJETO FINAL TALP\ProjetoFinalTALP\PROJETOFINALTALP\WFSUS\obj\Debug\WFSUS.frmAdmin.resources
+C:\Users\Jose Carlos\Desktop\PROJETO FINAL TALP\ProjetoFinalTALP\PROJETOFINALTALP\WFSUS\obj\Debug\WFSUS.frmDadosUsuarios.resources

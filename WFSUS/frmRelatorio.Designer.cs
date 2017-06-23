@@ -44,7 +44,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1416, 481);
+            this.dataGridView1.Size = new System.Drawing.Size(1360, 481);
             this.dataGridView1.TabIndex = 0;
             // 
             // btnExportar
@@ -53,7 +53,7 @@
             this.btnExportar.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnExportar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExportar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExportar.Location = new System.Drawing.Point(912, 503);
+            this.btnExportar.Location = new System.Drawing.Point(854, 503);
             this.btnExportar.Name = "btnExportar";
             this.btnExportar.Size = new System.Drawing.Size(236, 34);
             this.btnExportar.TabIndex = 73;
@@ -67,7 +67,7 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Default;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1169, 503);
+            this.button1.Location = new System.Drawing.Point(1113, 503);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(236, 34);
             this.button1.TabIndex = 74;
@@ -79,13 +79,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1417, 563);
+            this.ClientSize = new System.Drawing.Size(1361, 563);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnExportar);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRelatorio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Dados Producoes";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

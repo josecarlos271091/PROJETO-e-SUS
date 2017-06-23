@@ -15,7 +15,7 @@ namespace com.sus.DAL
         /// Método que busca todas os Usuarios 
         /// </summary>
         /// <returns>DataTable</returns>
-        public DataTable buscarTodasProducoes()
+        public DataTable buscarTodosUsuarios()
         {
             try
             {
@@ -132,9 +132,9 @@ namespace com.sus.DAL
                     //Instancia um novo comando com uma consulta e uma conexão
                     using (SqlCommand _sqlComm = new SqlCommand(sql, _connection))
                     {
-                        _sqlComm.Parameters.Add("@nomeUsuario", SqlDbType.Int).Value = dto.idUsuario;
-                        _sqlComm.Parameters.Add("@senhaUsuario", SqlDbType.VarChar).Value = dto.nomeUsuario;
-                        _sqlComm.Parameters.Add("@idUsuario", SqlDbType.VarChar).Value = dto.idUsuario;
+                        _sqlComm.Parameters.Add("@idUsuario", SqlDbType.Int).Value = dto.idUsuario;
+                        _sqlComm.Parameters.Add("@nomeUsuario", SqlDbType.VarChar).Value = dto.nomeUsuario;
+                        _sqlComm.Parameters.Add("@senhaUsuario", SqlDbType.VarChar).Value = dto.senhaUsuario;
 
                         //Abrir a conexao com o banco de dados
                         _connection.Open();

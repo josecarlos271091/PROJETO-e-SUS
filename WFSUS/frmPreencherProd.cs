@@ -88,56 +88,43 @@ namespace WFSUS
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            //Pega os dados e inserta Producao
+            //Verificando se a producao desse mes esta preenchida
             if (producaoPreenchida())
             {
                 btnSalvar.Enabled = false;
                 return;
             }
 
-
             ProducaoDTO dto = new ProducaoDTO();
-            dto.idMes = int.Parse(this.mesRecebido);
-            dto.idUsuario = frmLogin.idusuarioLogado; //Pegar idusuario logado
-            dto.totalAtend = int.Parse(txtTotalAtend.Text);
-            dto.visitasDomic = int.Parse(txtVisitasDomiciliares.Text);
-            dto.atColetivas = int.Parse(txtAtividadesColetivas.Text);
-            dto.atendAlcDrogas = int.Parse(txtAlcolDrogas.Text);
-            dto.atendAsma = int.Parse(txtAsmaticos.Text);
-            dto.atendCancerMama = int.Parse(txtCancerMama.Text);
-            dto.atendCancerUtero = int.Parse(txtCancerUtero.Text);
-            dto.atendDiabeticos = int.Parse(txtDiabeticos.Text);
-            dto.atendHanseniase = int.Parse(txtHanseniase.Text);
-            dto.atendHipertensos = int.Parse(txtHipertensos.Text);
-            dto.atendMental = int.Parse(txtSaudeMental.Text);
-            dto.atendPreNatal = int.Parse(txtPreNatal.Text);
-            dto.atendPuericultura = int.Parse(txtPuericultura.Text);
-            dto.atendTuberculose = int.Parse(txtTuberculose.Text);
-            dto.consultasAgendadas = int.Parse(txtConsultasAgend.Text);
-            dto.encaminHospital = int.Parse(txtEncaminhamentosHosp.Text);
-
-            if (string.IsNullOrEmpty(txtTotalAtend.Text) ||
-                string.IsNullOrEmpty(txtVisitasDomiciliares.Text) ||
-                string.IsNullOrEmpty(txtAtividadesColetivas.Text) ||
-                string.IsNullOrEmpty(txtAlcolDrogas.Text) ||
-                string.IsNullOrEmpty(txtAsmaticos.Text) ||
-                string.IsNullOrEmpty(txtCancerMama.Text) ||
-                string.IsNullOrEmpty(txtCancerUtero.Text) ||
-                string.IsNullOrEmpty(txtDiabeticos.Text) ||
-                string.IsNullOrEmpty(txtHanseniase.Text) ||
-                string.IsNullOrEmpty(txtHipertensos.Text) ||
-                string.IsNullOrEmpty(txtSaudeMental.Text) ||
-                string.IsNullOrEmpty(txtPreNatal.Text) ||
-                string.IsNullOrEmpty(txtPuericultura.Text) ||
-                string.IsNullOrEmpty(txtTuberculose.Text) ||
-                string.IsNullOrEmpty(txtConsultasAgend.Text) ||
-                string.IsNullOrEmpty(txtEncaminhamentosHosp.Text))
+            
+            //Pega e valida os dados e inserta Producao
+            try
+            { 
+                dto.idMes = int.Parse(this.mesRecebido);
+                dto.idUsuario = frmLogin.idusuarioLogado; //Pegar idusuario logado
+                dto.totalAtend = int.Parse(txtTotalAtend.Text);
+                dto.visitasDomic = int.Parse(txtVisitasDomiciliares.Text);
+                dto.atColetivas = int.Parse(txtAtividadesColetivas.Text);
+                dto.atendAlcDrogas = int.Parse(txtAlcolDrogas.Text);
+                dto.atendAsma = int.Parse(txtAsmaticos.Text);
+                dto.atendCancerMama = int.Parse(txtCancerMama.Text);
+                dto.atendCancerUtero = int.Parse(txtCancerUtero.Text);
+                dto.atendDiabeticos = int.Parse(txtDiabeticos.Text);
+                dto.atendHanseniase = int.Parse(txtHanseniase.Text);
+                dto.atendHipertensos = int.Parse(txtHipertensos.Text);
+                dto.atendMental = int.Parse(txtSaudeMental.Text);
+                dto.atendPreNatal = int.Parse(txtPreNatal.Text);
+                dto.atendPuericultura = int.Parse(txtPuericultura.Text);
+                dto.atendTuberculose = int.Parse(txtTuberculose.Text);
+                dto.consultasAgendadas = int.Parse(txtConsultasAgend.Text);
+                dto.encaminHospital = int.Parse(txtEncaminhamentosHosp.Text);
+            }
+            catch
             {
-                MessageBox.Show("Proibido deixar campos vazios!, por favor digite os valores correspondentes!","Informacao",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Proibido deixar campos vazios!, Por favor digite os valores correspondentes!, Os campos so aceitam Numeros!", "Error de Formato", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-                
-
+      
             ProducaoBussiness _producao = new ProducaoBussiness();
             if (_producao.insertarProducao(dto))
             {
@@ -152,26 +139,33 @@ namespace WFSUS
             //Pega os dados e atualiza Producao
 
             ProducaoDTO dto = new ProducaoDTO();
-            dto.idProducao = idProducaoGET;
-            dto.idMes = int.Parse(this.mesRecebido);
-            dto.idUsuario = frmLogin.idusuarioLogado;
-            dto.totalAtend = int.Parse(txtTotalAtend.Text);
-            dto.visitasDomic = int.Parse(txtVisitasDomiciliares.Text);
-            dto.atColetivas = int.Parse(txtAtividadesColetivas.Text);
-            dto.atendAlcDrogas = int.Parse(txtAlcolDrogas.Text);
-            dto.atendAsma = int.Parse(txtAsmaticos.Text);
-            dto.atendCancerMama = int.Parse(txtCancerMama.Text);
-            dto.atendCancerUtero = int.Parse(txtCancerUtero.Text);
-            dto.atendDiabeticos = int.Parse(txtDiabeticos.Text);
-            dto.atendHanseniase = int.Parse(txtHanseniase.Text);
-            dto.atendHipertensos = int.Parse(txtHipertensos.Text);
-            dto.atendMental = int.Parse(txtSaudeMental.Text);
-            dto.atendPreNatal = int.Parse(txtPreNatal.Text);
-            dto.atendPuericultura = int.Parse(txtPuericultura.Text);
-            dto.atendTuberculose = int.Parse(txtTuberculose.Text);
-            dto.consultasAgendadas = int.Parse(txtConsultasAgend.Text);
-            dto.encaminHospital = int.Parse(txtEncaminhamentosHosp.Text);
-
+            try
+            {
+                dto.idProducao = idProducaoGET;
+                dto.idMes = int.Parse(this.mesRecebido);
+                dto.idUsuario = frmLogin.idusuarioLogado;
+                dto.totalAtend = int.Parse(txtTotalAtend.Text);
+                dto.visitasDomic = int.Parse(txtVisitasDomiciliares.Text);
+                dto.atColetivas = int.Parse(txtAtividadesColetivas.Text);
+                dto.atendAlcDrogas = int.Parse(txtAlcolDrogas.Text);
+                dto.atendAsma = int.Parse(txtAsmaticos.Text);
+                dto.atendCancerMama = int.Parse(txtCancerMama.Text);
+                dto.atendCancerUtero = int.Parse(txtCancerUtero.Text);
+                dto.atendDiabeticos = int.Parse(txtDiabeticos.Text);
+                dto.atendHanseniase = int.Parse(txtHanseniase.Text);
+                dto.atendHipertensos = int.Parse(txtHipertensos.Text);
+                dto.atendMental = int.Parse(txtSaudeMental.Text);
+                dto.atendPreNatal = int.Parse(txtPreNatal.Text);
+                dto.atendPuericultura = int.Parse(txtPuericultura.Text);
+                dto.atendTuberculose = int.Parse(txtTuberculose.Text);
+                dto.consultasAgendadas = int.Parse(txtConsultasAgend.Text);
+                dto.encaminHospital = int.Parse(txtEncaminhamentosHosp.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Proibido deixar campos vazios!, Por favor digite os valores correspondentes!, Os campos so aceitam Numeros!", "Error de Formato", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             ProducaoBussiness _producao = new ProducaoBussiness();
 
             if (_producao.atualizarProducao(dto))
